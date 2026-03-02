@@ -1,0 +1,149 @@
+//Health Bonus Pulse
+event HudHealthBonusPulse {
+	Animate	PlayerStatusHealthValue	BgColor	"HL2_BgColor"	Linear	0.0	0.0
+	
+	Animate	PlayerStatusHealthValue	FgColor	"HL2_FgColor" Linear 0.0 0.04
+	Animate	PlayerStatusHealthValueSubLabel	FgColor	"HL2_FgColor" Linear 0.0 0.03
+
+	Animate	PlayerStatusHealthValueGlow	FgColor	"HL2_FgColor" Linear 0.0 0.04
+	Animate PlayerStatusHealthValueGlow	Alpha	"255"	Linear	0.0	0.1
+	Animate PlayerStatusHealthValueGlow	Alpha	"0"	Deaccel	0.1	0.8
+
+	RunEvent HudHealthBonusPulsePulse	1.0
+}
+
+event HudHealthBonusPulsePulse {
+	Animate	PlayerStatusHealthValue	BgColor	"HL2_BgColor"	Linear	0.0	0.0
+	
+	Animate	PlayerStatusHealthValue	FgColor	"HL2_FgColor" Linear 0.0 0.04
+	Animate	PlayerStatusHealthValueSubLabel		FgColor	"HL2_FgColor" Linear 0.0 0.03
+
+	Animate	PlayerStatusHealthValueGlow	FgColor	"HL2_FgColor" Linear 0.0 0.04
+	Animate PlayerStatusHealthValueGlow	Alpha	"255"	Linear	0.0	0.1
+	Animate PlayerStatusHealthValueGlow	Alpha	"0"	Deaccel	0.1	0.8
+
+	RunEvent HudHealthBonusPulseLoop	0.8
+}
+
+// call to loop HudHealthBonusPulse
+event HudHealthBonusPulseLoop {
+	RunEvent HudHealthBonusPulsePulse 0.0
+}
+
+event HudHealthBonusPulseStop {
+	StopEvent HudHealthBonusPulse 0.0
+	StopEvent HudHealthBonusPulsePulse 0.0
+	StopEvent HudHealthBonusPulseLoop 0.0
+
+	Animate	PlayerStatusHealthValue	BgColor	"HL2_BgColor"	Linear	0.0	0.0
+	
+	Animate	PlayerStatusHealthValue	FgColor	"HL2_FgColor" Linear 0.0 0.04
+	Animate	PlayerStatusHealthValueSubLabel		FgColor	"HL2_FgColor" Linear 0.0 0.03
+
+	Animate	PlayerStatusHealthValueGlow	FgColor	"HL2_FgColor" Linear 0.0 0.04
+	Animate PlayerStatusHealthValueGlow	Alpha	"255"	Linear	0.0	0.1
+	Animate PlayerStatusHealthValueGlow	Alpha	"0"	Deaccel	0.1	2.0
+}
+
+//Health Dying Pulse
+event HudHealthDyingPulse {
+	Animate	PlayerStatusHealthValue	BgColor	"HL2_DamagedBg"	Linear 	0.0	0.1
+	Animate PlayerStatusHealthValue	BgColor	"HL2_BgColor"	Deaccel 0.1	1.75
+
+	Animate PlayerStatusHealthValueSubLabel	FgColor	"HL2_BrightFg"	Linear	0.0	0.2
+	Animate PlayerStatusHealthValueSubLabel	FgColor	"HL2_DamagedFg"	Linear	0.2	1.2
+	
+	Animate PlayerStatusHealthValue	FgColor	"HL2_BrightFg"	Linear	0.0	0.1
+	Animate PlayerStatusHealthValue	FgColor	"HL2_DamagedFg"	Linear	0.1	1.2
+	
+	Animate PlayerStatusHealthValueGlow	Alpha	"255"	Linear	0.0	0.1
+	Animate PlayerStatusHealthValueGlow	Alpha	"0"	Deaccel	0.1	0.9
+
+	Animate PlayerStatusHealthValueGlow	FgColor	"HL2_DamagedBg"	Linear	0.0	0.1
+	Animate PlayerStatusHealthValueGlow	FgColor	"HL2_BgColor"		Deaccel	0.1	0.9
+	
+	RunEvent HudHealthDyingPulsePulse	1.0
+}
+
+event HudHealthDyingPulsePulse {
+	Animate PlayerStatusHealthValueGlow	Alpha	"255"	Linear	0.0	0.1
+	Animate PlayerStatusHealthValueGlow	Alpha	"0"	Deaccel	0.1	0.8
+	
+	Animate PlayerStatusHealthValue	FgColor	"HL2_BrightDamagedFg"	Linear	0.0	0.1
+	Animate PlayerStatusHealthValue	FgColor	"HL2_DamagedFg"		Deaccel	0.1	0.8
+
+	Animate PlayerStatusHealthValueGlow	FgColor	"HL2_BrightDamagedFg"	Linear	0.0	0.1
+	Animate PlayerStatusHealthValueGlow	FgColor	"HL2_DamagedFg"		Deaccel	0.1	0.8
+	
+	Animate PlayerStatusHealthValue	BgColor	"100 0 0 80"	Linear	0.0	0.1
+	Animate PlayerStatusHealthValue	BgColor	"HL2_BgColor"	Deaccel	0.1	0.8
+	
+	RunEvent HudHealthDyingPulseLoop	0.8
+}
+
+// call to loop HudHealthDyingPulse
+event HudHealthDyingPulseLoop {
+	RunEvent HudHealthDyingPulsePulse	0.0
+}
+
+event HudHealthDyingPulseStop {
+	StopEvent HudHealthDyingPulse		0.0
+	StopEvent HudHealthDyingPulsePulse 	0.0
+	StopEvent HudHealthDyingPulseLoop	0.0
+	
+	Animate	PlayerStatusHealthValue	BgColor	"HL2_BgColor"	Linear	0.0	0.0
+	
+	Animate	PlayerStatusHealthValue	FgColor	"HL2_FgColor"	Linear 0.0 0.04
+	Animate	PlayerStatusHealthValueSubLabel		FgColor	"HL2_FgColor"	Linear 0.0 0.03
+	
+	Animate PlayerStatusHealthValueGlow	FgColor	"HL2_FgColor"	Linear 0.0 0.0
+	Animate PlayerStatusHealthValueGlow	Alpha	"255"	Linear	0.0	0.1
+	Animate PlayerStatusHealthValueGlow	Alpha	"0"	Deaccel	0.1	2.0
+}
+
+// low ammo
+event HudLowAmmoPulse {
+	Animate AmmoInReserve	FgColor		"HL2_BrightDamagedFg"	Linear	0.0	0.2
+	Animate AmmoInReserve	FgColor		"HL2_DamagedFg"		Accel		0.2	1.2
+
+	Animate AmmoInClip	FgColor		"HL2_BrightDamagedFg"	Linear	0.0	0.2
+	Animate AmmoInClip	FgColor		"HL2_DamagedFg"		Accel		0.2	1.2
+	Animate AmmoNoClip	FgColor		"HL2_BrightDamagedFg"	Linear	0.0	0.2
+	Animate AmmoNoClip	FgColor		"HL2_DamagedFg"		Accel		0.2	1.2
+
+	Animate AmmoInClipShadow	FgColor		"HL2_BrightDamagedFg"	Linear	0.0	0.2
+	Animate AmmoInClipShadow	FgColor		"HL2_DamagedFg"		Accel		0.2	1.2
+	Animate AmmoNoClipShadow	FgColor		"HL2_BrightDamagedFg"	Linear	0.0	0.2
+	Animate AmmoNoClipShadow	FgColor		"HL2_DamagedFg"		Accel		0.2	1.2
+
+	Animate AmmoClipGlow	FgColor		"HL2_BrightDamagedFg"	Linear	0.0	0.2
+	Animate AmmoClipGlow	FgColor		"HL2_DamagedFg"		Accel		0.2	1.2
+
+	Animate AmmoClipGlow	Alpha	"255"	Linear	0.0	0.1
+	Animate AmmoClipGlow	Alpha	"0"	Deaccel	0.1	1.5
+}
+
+event HudLowAmmoPulseStop {
+	StopEvent HudLowAmmoPulse 0.0
+	StopEvent HudLowAmmoPulsePulse 0.0
+	StopEvent HudLowAmmoPulseLoop 0.0
+	
+	Animate	AmmoInClip	BgColor	"HL2_BgColor"	Linear	0.0	0.0
+	Animate	AmmoNoClip	BgColor	"HL2_BgColor"	Linear	0.0	0.0
+
+	Animate AmmoInClip	FgColor	"HL2_BrightFg"	Linear	0.0	0.15
+	Animate AmmoInClip	FgColor	"HL2_FgColor"	Deaccel	0.15	1.5
+	Animate AmmoNoClip	FgColor	"HL2_BrightFg"	Linear	0.0	0.15
+	Animate AmmoNoClip	FgColor	"HL2_FgColor"	Deaccel	0.15	1.5
+	Animate AmmoInReserve	FgColor	"HL2_BrightFg"	Linear	0.0	0.15
+	Animate AmmoInReserve	FgColor	"255 220 0 176"	Deaccel	0.15	1.5
+	Animate AmmoInClipShadow	FgColor	"HL2_BrightFg"	Linear	0.0	0.15
+	Animate AmmoInClipShadow	FgColor	"HL2_FgColor"	Deaccel	0.15	1.5
+	Animate AmmoNoClipShadow	FgColor	"HL2_BrightFg"	Linear	0.0	0.15
+	Animate AmmoNoClipShadow	FgColor	"HL2_FgColor"	Deaccel	0.15	1.5
+	
+	Animate AmmoClipGlow	FgColor	"HL2_BrightFg"	Linear	0.0	0.15
+	Animate AmmoClipGlow	FgColor	"HL2_FgColor"	Deaccel	0.15	1.5
+	Animate AmmoClipGlow	Alpha	"255"		Linear	0.0	0.0
+	Animate AmmoClipGlow	Alpha	"0"		Deaccel	0.01	1.5
+}

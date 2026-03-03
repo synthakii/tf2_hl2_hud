@@ -3,10 +3,10 @@
 		"fieldName"	"HudItemEffectMeter"
 		"visible"	"1"
 		"enabled"	"1"
-		"xpos"		"p0.019"
-		"ypos"		"p0.854"
-		"wide"		"p0.072"
-		"tall"		"p0.037"
+		"xpos"		"p0.652"
+		"ypos"  	"p0.9"
+		"wide"		"p0.0705"
+		"tall"  	"p0.075"
 	}
 	
 	"ItemEffectMeterBG" {
@@ -34,19 +34,36 @@
 	}
 	
 	"ItemEffectMeterCountLabelFix" {
+		"ControlName"		"CExLabel"
+		"fieldName"		"ItemEffectMeterCountLabelFix"
+		"zpos"			"2"
+		"wide"			"p0.0705"
+		"tall"  		"p0.075"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%progresscount%"
+		"textAlignment"		"east"
+		"textinsetx"		"20"
+		"paintbackgroundtype"	"2"
+		"font"			"HL2_HudNumbers"
+		"fgcolor"		"HL2_FgColor"
+		"bgcolor_override"	"HL2_BgColor"
+	}
+
+	"ItemEffectMeterCountSubLabel" {
 		"ControlName"			"CExLabel"
-		"fieldName"			"ItemEffectMeterCountLabelFix"
-		"zpos"				"1"
-		"wide"				"p0.072"
-		"tall"				"p0.037"
+		"fieldName"			"ItemEffectMeterCountSubLabel"
+		"zpos"				"3"
+		"wide"				"p0.0705"
+		"tall"  			"p0.075"
 		"visible"			"1"
 		"enabled"			"1"
-		"labelText"			"#HL2_Killstreak"
-		"textAlignment"			"center"
+		"labelText"			"ALT"
+		"textAlignment"			"SOUTH-WEST"
+		"textinsetx"			"8"
+		"textinsety"			"-5"
 		"use_proportional_insets"	"1"
-		"paintbackgroundtype"		"2"
 		"font"				"Default"
-		"fgcolor_override"		"HL2_FgColor"
-		"bgcolor_override"		"HL2_BgColor"
-	}	
+		"fgcolor"			"HL2_FgColor"
+	}
 }

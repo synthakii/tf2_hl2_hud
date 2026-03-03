@@ -1,14 +1,9 @@
-#base "huditemeffectmeter_killstreak.res"
+#base "huditemeffectmeter_demoman.res"
 
 "Resource/UI/HudItemEffectMeter_Engineer.res" {
-	"ItemEffectMeterCountLabelFix" {
-		"fieldName"	"ItemEffectMeterCountLabelFix"
-		"xpos"		"r224"
-	}
-
-	"ItemEffectMeterCountSubLabel" {
-		"fieldName"	"ItemEffectMeterCountSubLabel"
-		"xpos"		"r224"
-		"labelText"	"ALT"
+	"HudItemEffectMeter" {
+		"fieldName"	"HudItemEffectMeter"
+		"xpos"		"p0.7385"
+		"ypos"  	"p0.9"
 	}
 }

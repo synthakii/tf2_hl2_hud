@@ -438,6 +438,9 @@ Scheme
 		"HL2_DamagedFg"			"180 0 0 230"
 		"HL2_BrightDamagedFg"		"255 0 0 255"
 
+		"HL2_Blue"		"153 204 255 255"
+		"HL2_Red"		"255 64 64 255"
+
 		// weapon selection colors
 		"SelectionNumberFg"		"255 220 0 255"
 		"SelectionTextFg"		"255 220 0 255"
@@ -551,98 +554,83 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Verdana"
+				"name"		"GorDIN"
 				"tall"		"12"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
+				"weight"	"400"
 				"yres"	"480 599"
+				"antialias" "1"
 			}
 			"2"
 			{
-				"name"		"Verdana"
-				"tall"		"13"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
+				"name"		"GorDIN"
+				"tall"		"14"
+				"weight"	"400"
 				"yres"	"600 767"
+				"antialias" "1"
 			}
 			"3"
 			{
-				"name"		"Verdana"
-				"tall"		"14"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
+				"name"		"GorDIN"
+				"tall"		"18"
+				"weight"	"400"
 				"yres"	"768 1023"
 				"antialias"	"1"
 			}
 			"4"
 			{
-				"name"		"Verdana"
+				"name"		"GorDIN"
 				"tall"		"20"
-				"weight"	"0"
-				"range"		"0x0000 0x017F"
+				"weight"	"400"
 				"yres"	"1024 1199"
 				"antialias"	"1"
 			}
-			"5" // Misyl: Proportional
+			"5" // Proportional - misyl
 			{
-				"name"		"Verdana"
-				"tall"		"9"
+				"name"		"GorDIN"
+				"tall"		"12"
 				"weight"	"0"
-				"range"		"0x0000 0x017F"
 				"antialias"	"1"
 			}
-			"6"
-			{
-				"name"		"Arial"
-				"tall"		"12"
-				"range" 		"0x0000 0x00FF"
-				"weight"		"0"
-			}
 		}
-
-
 		"DefaultVerySmall"
 		{
 			"1"
 			{
-				"name"		"Verdana"
-				"tall"		"12"
+				"name"		"GorDIN"
+				"tall"		"14"
 				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"yres"	"480 599"
+				"antialias" "1"
 			}
 			"2"
 			{
-				"name"		"Verdana"
-				"tall"		"12"
+				"name"		"GorDIN"
+				"tall"		"15"
 				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"yres"	"600 767"
+				"antialias" "1"
 			}
 			"3"
 			{
-				"name"		"Verdana"
-				"tall"		"12"
+				"name"		"GorDIN"
+				"tall"		"16"
 				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"yres"	"768 1023"
 				"antialias"	"1"
 			}
 			"4"
 			{
-				"name"		"Verdana"
-				"tall"		"14"
+				"name"		"GorDIN"
+				"tall"		"20"
 				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"yres"	"1024 1199"
 				"antialias"	"1"
 			}
-			"5" // Misyl: Proportional
+			"5"  // Proportional - misyl
 			{
-				"name"		"Verdana"
-				"tall"		"9"
+				"name"		"GorDIN"
+				"tall"		"12"
 				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"antialias"	"1"
 			}
 		}
@@ -705,6 +693,76 @@ Scheme
 				"weight"		"800"
 			}
 		}
+		WeaponIcons
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"70" [$DECK]
+				"tall"		"64"
+				"tall_hidef"	"58"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
+		WeaponIconsSelected
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"70" [$DECK]
+				"tall"		"64"
+				"tall_hidef"	"58"
+				"weight"	"0"
+				"antialias" "1"
+				"blur"		"5"
+				"scanlines"	"2"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
+		WeaponIconsSmall
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"36" [$DECK]
+				"tall"		"32"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
+		WeaponIconsSmall_ABitSmaller
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"34" [$DECK]
+				"tall"		"27"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
+		WeaponIconsSmallSecondary
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"34" [$DECK]
+				"tall"		"25"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
+
 		CenterPrintText
 		{
 			// note that this scales with the screen resolution
@@ -1999,6 +2057,82 @@ Scheme
 				"weight"	"700"
 				"yres"		"1200 10000"
 				"dropshadow"	"1"
+			}
+		}
+
+		"TargetID"
+		{
+			"1"
+			{
+				"name"		"GorDIN"
+				"tall"		"24"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+			}
+		}
+
+		"HudNumbersTimer"
+		{
+			"1"
+			{
+				"name"		"GorDIN"
+				"tall"		"15"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+			}
+		}
+
+		"HL2MPTypeDeath"
+		{
+		   "1"
+		   {
+				"name"  "HL2MP" // csd.ttf
+				"tall"  "32"
+				"weight" "0"
+				"additive" "1"
+				"antialias" "1"
+				"custom" "1" [$OSX]
+		   }
+		}	
+
+		// Used by scoreboard and spectator UI for names which don't map in the normal fashion
+		"DefaultVerySmallFallBack"
+		{
+			"1"
+			{
+				"name"		"GorDIN"
+				"tall"		"10"
+				"weight"	"0"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"yres"		"480 599"
+				"antialias"	"1"
+			}
+			"2"
+			{
+				"name"		"GorDIN"
+				"tall"		"12"
+				"weight"	"0"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"yres"		"600 1199"
+				"antialias"	"1"
+			}
+			"3"
+			{
+				"name"		"GorDIN"
+				"tall"		"15"
+				"weight"	"0"
+				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
+				"yres"		"1200 6000"
+				"antialias"	"1"
+			}
+			"4"  // Proportional - misyl
+			{
+				"name"		"GorDIN"
+				"tall"		"10"
+				"weight"	"0"
+				"antialias"	"1"
 			}
 		}
 
@@ -5896,7 +6030,7 @@ Scheme
 		"16"		"resource/linux_fonts/LiberationMono-Regular.ttf"
 		"17"		"resource/linux_fonts/FiraSans-Regular.ttf"
 
-		"18"		"resource/HALFLIFE2.ttf"
+		"18"		"resource/halflife2_25th.ttf"
 		"19"		"resource/HL2crosshairs.ttf"
 		"20"		"resource/GorDIN-Regular.ttf"
 		"21"		"resource/GorDIN-Bold.ttf"

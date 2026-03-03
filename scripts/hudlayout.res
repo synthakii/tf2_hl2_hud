@@ -10,17 +10,6 @@
 		"wide"	"f0"
 		"tall"	"480"
 	}
-
-	HudWeaponAmmo
-	{
-		"fieldName" "HudWeaponAmmo"
-		"visible" "1"
-		"enabled" "1"
-		"xpos"	"0"
-		"ypos"	"0"
-		"wide"	"f0"
-		"tall"	"480"
-	}
 	
 	HudObjectiveStatus
 	{
@@ -49,19 +38,6 @@
 		"red_active_xpos"			"106"
 		"red_active_xpos_minmode"	"105"
 	}	
-
-	HudItemEffectMeter
-	{
-		"fieldName"	"HudItemEffectMeter"
-		"visible"	"1"
-		"enabled"	"1"
-		"xpos"		"0"
-		"ypos"		"0"
-		"wide"		"f0"
-		"tall"		"480"
-		"MeterFG"	"255 220 0 220"
-		"MeterBG"	"Blank"
-	}
 	
 	HudMedicCharge
 	{
@@ -76,44 +52,6 @@
 		"ypos"			"r90"	[$X360]
 		"wide"			"200"
 		"tall"			"100"
-	}
-	
-	HudDemomanCharge
-	{
-		"fieldName"		"HudDemomanCharge"
-		"visible"		"1"
-		"enabled"		"1"
-		"xpos"			"r80"	[$WIN32]
-		"xpos_minmode"	"r52"	[$WIN32]
-		"ypos"			"r21"	[$WIN32]
-		"ypos_minmode"	"r40"	[$WIN32]
-		"xpos"			"r112"	[$X360]
-		"ypos"			"r45"	[$X360]
-		"zpos"			"1"			// draw in front of ammo
-		"wide"			"60"
-		"wide_minmode"	"50"
-		"tall"			"8"
-		"MeterFG"		"White"
-		"MeterBG"		"Gray"
-	}	
-
-	HudBowCharge
-	{
-		"fieldName"		"HudBowCharge"
-		"visible"		"1"
-		"enabled"		"1"
-		"xpos"			"r80"	[$WIN32]
-		"xpos_minmode"	"r52"	[$WIN32]
-		"ypos"			"r21"	[$WIN32]
-		"ypos_minmode"	"r40"	[$WIN32]
-		"xpos"			"r112"	[$X360]
-		"ypos"			"r45"	[$X360]
-		"zpos"			"1"			// draw in front of ammo
-		"wide"			"60"
-		"wide_minmode"	"50"
-		"tall"			"8"
-		"MeterFG"		"White"
-		"MeterBG"		"Gray"
 	}
 
 	HudFlameRocketCharge
@@ -187,17 +125,6 @@
 		"SelectionNumberFg"	"200 187 161 255"
 		"NumberFont" "HudSelectionText"
 	}	
-	
-	CHudAccountPanel
-	{
-		"fieldName"	"CHudAccountPanel"
-		"visible" "1"
-		"enabled" "1"
-		"xpos"	"0"
-		"ypos"	"0"
-		"wide"	"f0"
-		"tall"	"480"
-	}
 	
 	CHealthAccountPanel
 	{
@@ -486,36 +413,27 @@
 		"tall"	 "480"
 	}
 
-	HudDeathNotice
-	{
-		"fieldName" "HudDeathNotice"
-		"visible" "1"
-		"enabled" "1"
-		"xpos"	 "r640"	[$WIN32]
-		"ypos"	 "18"	[$WIN32]
-		"xpos"	 "r672"	[$X360]
-		"ypos"	 "35"	[$X360]
-		"wide"	 "628"
-		"tall"	 "468"
-
-		"MaxDeathNotices" "4"
-		"IconScale"	  "0.35"
-		"LineHeight"	  "16"
-		"LineSpacing"	  "4"
-		"CornerRadius"	  "3"
-		"RightJustify"	  "1"	// If 1, draw notices from the right
-		
-		"TextFont"		"Default"
-		
-		"TeamBlue"		"HUDBlueTeamSolid"
-		"TeamRed"		"HUDRedTeamSolid"
-		"IconColor"		"HudWhite"
+	"HudDeathNotice" {
+		"fieldName"		"HudDeathNotice"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"xpos"			"0"
+		"ypos"			"p0.03"
+		"wide"			"f0"
+		"tall"			"480"
+		"MaxDeathNotices"	"4"
+		"IconScale"		"0.35"
+		"LineHeight"		"15"
+		"LineSpacing"		"4"
+		"CornerRadius"		"0"
+		"RightJustify"		"1" // If 1, draw notices from the right
+		"TextFont"		"HudNumbersTimer"
+		"TeamBlue"		"HL2_Blue"
+		"TeamRed"		"HL2_Red"
+		"IconColor"		"160 0 0 255"
 		"LocalPlayerColor"	"HUDBlack"
-
-		"BaseBackgroundColor"	"46 43 42 220"		[$WIN32]
-		"LocalBackgroundColor"	"245 229 196 200"	[$WIN32]
-		"BaseBackgroundColor"	"32 32 32 255"		[$X360]
-		"LocalBackgroundColor"	"0 0 0 255"		[$X360]
+		"BaseBackgroundColor"	"0 0 0 0"
+		"LocalBackgroundColor"	"0 0 0 0"
 	}
 
 	HudVehicle
@@ -1032,17 +950,6 @@
 		"tall"			"200"	[$WIN32]
 		"tall"			"180"	[$X360]
 		"PaintBackgroundType"	"0"
-	}	
-	
-	HudDemomanPipes
-	{
-		"fieldName"		"HudDemomanPipes"
-		"visible" "1"
-		"enabled" "1"
-		"xpos"	"0"
-		"ypos"	"0"
-		"wide"	"f0"
-		"tall"	"480"
 	}	
 
 	HudTeamGoal

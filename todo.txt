@@ -1,0 +1,5 @@
+Do weapon crosshair sprite trick to add weapon icons next to the ammo
+maybe attempt to add the hl2 menu
+test subtitles
+maybe add the quickinfo crosshair, even if its blank
+test out mvm stuff

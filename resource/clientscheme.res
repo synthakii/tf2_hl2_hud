@@ -361,9 +361,9 @@ Scheme
 		SectionedListPanel.DividerColor		"Black"
 		SectionedListPanel.TextColor		"Orange"
 		SectionedListPanel.BrightTextColor	"Orange"
-		SectionedListPanel.BgColor			"TransparentLightBlack"
+		SectionedListPanel.BgColor			"Blank"
 		SectionedListPanel.SelectedTextColor			"Black"
-		SectionedListPanel.SelectedBgColor				"Red"
+		SectionedListPanel.SelectedBgColor				"Blank"
 		SectionedListPanel.OutOfFocusSelectedTextColor	"Black"
 		SectionedListPanel.OutOfFocusSelectedBgColor	"255 255 255 32"
 
@@ -440,6 +440,7 @@ Scheme
 
 		"HL2_Blue"		"153 204 255 255"
 		"HL2_Red"		"255 64 64 255"
+		"HL2_Orange"		"255 176 0 255"
 
 		// weapon selection colors
 		"SelectionNumberFg"		"255 220 0 255"

@@ -147,3 +147,18 @@ event HudLowAmmoPulseStop {
 	Animate AmmoClipGlow	Alpha	"255"		Linear	0.0	0.0
 	Animate AmmoClipGlow	Alpha	"0"		Deaccel	0.01	1.5
 }
+
+// ubercharge
+
+event HudMedicCharged
+{
+}
+
+// call to loop HudHealthBonusPulse
+event HudMedicChargedLoop
+{
+}
+
+event HudMedicChargedStop
+{
+}

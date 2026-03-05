@@ -110,21 +110,7 @@
 		"SelectionNumberFg"	"200 187 161 255"
 		"NumberFont" "HudSelectionText"
 	}	
-	
-	CHealthAccountPanel
-	{
-		"fieldName"				"CHealthAccountPanel"
-		"xpos"					"76"
-		"xpos_minmode"			"61"
-		"ypos"					"r152"
-		"ypos_minmode"			"r134"
-		"wide"					"116"
-		"tall"  				"180"
-		"visible" 				"1"
-		"enabled" 				"1"
-		"PaintBackgroundType"	"2"
-	}
-	
+
 	CDamageAccountPanel
 	{
 		"fieldName"				"CDamageAccountPanel"
@@ -415,8 +401,8 @@
 		"TextFont"		"HudNumbersTimer"
 		"TeamBlue"		"HL2_Blue"
 		"TeamRed"		"HL2_Red"
-		"IconColor"		"160 0 0 255"
-		"LocalPlayerColor"	"HUDBlack"
+		"IconColor"		"255 96 50 200"
+		"LocalPlayerColor"	"255 96 50 200"
 		"BaseBackgroundColor"	"0 0 0 0"
 		"LocalBackgroundColor"	"0 0 0 0"
 	}
@@ -1366,18 +1352,6 @@
 		"ypos"	"0"
 		"wide"	"f0"
 		"tall"	"f0"
-	}
-
-	HudMatchStatus
-	{
-		"fieldName"				"HudMatchStatus"
-		"visible"				"1"
-		"enabled"				"1"
-		"xpos"					"0"
-		"ypos"					"0"
-		"zpos"					"3"
-		"wide"					"f0"
-		"tall"					"f0"
 	}
 
 	"QueueHUDStatus"

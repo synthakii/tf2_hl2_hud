@@ -441,6 +441,7 @@ Scheme
 		"HL2_Blue"		"153 204 255 255"
 		"HL2_Red"		"255 64 64 255"
 		"HL2_Orange"		"255 176 0 255"
+		"HL2_Spectator"		"204 204 204 255"
 
 		// weapon selection colors
 		"SelectionNumberFg"		"255 220 0 255"
@@ -1486,6 +1487,30 @@ Scheme
 				"weight"	"1000"
 				"additive"	"1"
 				"antialias" "1"
+				"custom"	"1"
+			}
+		}
+		"HudNumbersTimer"
+		{
+			"1"
+			{
+				"name"		"GorDIN"
+				"tall"		"15"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+			}
+		}
+		HL2_HudNumbersA
+		{
+			"1"
+			{
+				"name"		"HalfLife2_a"
+				"tall"		"32"	[!$DECK]
+				"tall"		"40"	[$DECK]
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
 				"custom"	"1"
 			}
 		}
@@ -6038,5 +6063,6 @@ Scheme
 		"22"		"resource/GorDIN-Semibold.ttf"
 		"23"		"resource/GorDIN-Black.ttf"
 		"24"		"resource/GorDIN-Light.ttf"
+		"25"		"resource/halflife2_25th_a.ttf"
 	}
 }

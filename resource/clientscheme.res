@@ -1456,7 +1456,7 @@ Scheme
 				"tall"		"32"	[!$DECK]
 				"tall"		"40"	[$DECK]
 				"weight"	"0"
-				"antialias" "1"
+				"antialias" 	"1"
 				"additive"	"1"
 				"custom"	"1"
 			}

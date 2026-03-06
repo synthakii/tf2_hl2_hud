@@ -71,7 +71,7 @@
 		"textinsety"			"6"
 		"use_proportional_insets"	"1"
 		"font"				"HL2_HudNumbersSmall"
-		"fgcolor_override"		"255 220 0 176" // we need to fake the additive property here
+		"fgcolor_override"		"255 220 0 146" // we need to fake the additive property here
 	}
 
 	"AmmoInReserveShadow" {

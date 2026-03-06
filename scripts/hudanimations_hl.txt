@@ -121,6 +121,10 @@ event HudLowAmmoPulse {
 
 	Animate AmmoClipGlow	Alpha	"255"	Linear	0.0	0.1
 	Animate AmmoClipGlow	Alpha	"0"	Deaccel	0.1	1.5
+
+	// hide weapon icon as theres no way to tint the color of it
+	Animate HudCrosshair	Alpha	"255"	Linear	0.0	0.2
+	Animate HudCrosshair	Alpha	"0"	Deaccel	0.1	1.5
 }
 
 event HudLowAmmoPulseStop {
@@ -136,7 +140,7 @@ event HudLowAmmoPulseStop {
 	Animate AmmoNoClip	FgColor	"HL2_BrightFg"	Linear	0.0	0.15
 	Animate AmmoNoClip	FgColor	"HL2_FgColor"	Deaccel	0.15	1.5
 	Animate AmmoInReserve	FgColor	"HL2_BrightFg"	Linear	0.0	0.15
-	Animate AmmoInReserve	FgColor	"255 220 0 176"	Deaccel	0.15	1.5
+	Animate AmmoInReserve	FgColor	"255 220 0 146"	Deaccel	0.15	1.5
 	Animate AmmoInClipShadow	FgColor	"HL2_BrightFg"	Linear	0.0	0.15
 	Animate AmmoInClipShadow	FgColor	"HL2_FgColor"	Deaccel	0.15	1.5
 	Animate AmmoNoClipShadow	FgColor	"HL2_BrightFg"	Linear	0.0	0.15
@@ -146,6 +150,10 @@ event HudLowAmmoPulseStop {
 	Animate AmmoClipGlow	FgColor	"HL2_FgColor"	Deaccel	0.15	1.5
 	Animate AmmoClipGlow	Alpha	"255"		Linear	0.0	0.0
 	Animate AmmoClipGlow	Alpha	"0"		Deaccel	0.01	1.5
+
+	// show weapon icon
+	Animate HudCrosshair	Alpha	"255"		Linear	0.0	0.0
+	Animate HudCrosshair	Alpha	"0"		Deaccel	0.01	1.5
 }
 
 // ubercharge

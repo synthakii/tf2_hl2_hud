@@ -1,4 +1,4 @@
-Do weapon crosshair sprite trick to add weapon icons next to the ammo
+somehow find a way to color the weapon icon with low ammo, amby exists too
 maybe attempt to add the hl2 menu
 test subtitles
 maybe add the quickinfo crosshair, even if its blank

@@ -382,6 +382,8 @@
 		"enabled" "1"
 		"wide"	 "640"
 		"tall"	 "480"
+		"xpos"	"p0.3455"
+		"ypos"	"p0.4245"
 	}
 
 	"HudDeathNotice" {

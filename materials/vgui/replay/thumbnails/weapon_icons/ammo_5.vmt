@@ -1,0 +1,7 @@
+"UnlitGeneric" {
+	"$basetexture"		"vgui/replay/thumbnails/weapon_icons/ammo_5"
+	"$vertexalpha"		"1"
+	"$translucent"		"1"
+	"$no_fullbright"	"1"
+	"$ignorez"		"1"
+}
